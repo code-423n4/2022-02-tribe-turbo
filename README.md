@@ -23,6 +23,10 @@ Note that ERC4626.sol is not fully up to date with [EIP-4626](https://eips.ether
 
 The default access control will allow the TurboRouter and TurboSavior to interface with the user Safes, but users can set their own access control policy by changing the "Authority" on their Safe.
 
+## Overview Videos
+[Turbo Architecture](https://youtu.be/vcuhOVeReTY)
+[Turbo Code](https://www.youtube.com/watch?v=EdzKAvq2dJg)
+
 # tribe-turbo
 
 Fuse liquidity accelerator for friends of the Tribe.
