@@ -7,8 +7,6 @@
 - Starts February 17, 2022 00:00 UTC
 - Ends February 23, 2022 23:59 UTC
 
-This repo will be made public before the start of the contest. (C4 delete this line when made public)
-
 ## Scope
 [src/TurboMaster.sol](https://github.com/code-423n4/2022-02-tribe-turbo/blob/main/src/TurboMaster.sol) (1 contracts)
 [src/TurboSafe.sol](https://github.com/code-423n4/2022-02-tribe-turbo/blob/main/src/TurboSafe.sol) (1 contracts)
