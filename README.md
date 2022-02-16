@@ -1,7 +1,7 @@
 ## ⭐️ Sponsor: Contest prep
 - [x] Make sure your code is thoroughly commented using the [NatSpec format](https://docs.soliditylang.org/en/v0.5.10/natspec-format.html#natspec-format).
 - [x] Modify the bottom of this `README.md` file to describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing. ([Here's a well-constructed example.](https://github.com/code-423n4/2021-06-gro/blob/main/README.md))
-- [ ] Please have final versions of contracts and documentation added/updated in this repo **no less than 8 hours prior to contest start time.**
+- [x] Please have final versions of contracts and documentation added/updated in this repo **no less than 8 hours prior to contest start time.**
 - [x] Ensure that you have access to the _findings_ repo where issues will be submitted.
 - [ ] Promote the contest on Twitter (optional: tag in relevant protocols, etc.)
 - [ ] Share it with your own communities (blog, Discord, Telegram, email newsletters, etc.)
@@ -23,9 +23,12 @@
 This repo will be made public before the start of the contest. (C4 delete this line when made public)
 
 ## Scope
-`src/TurboMaster.sol` (1 contracts)
-`src/TurboSafe.sol` (1 contracts)
-`src/modules/*` (4 contracts)
+[src/TurboMaster.sol](https://github.com/code-423n4/2022-02-tribe-turbo/blob/main/src/TurboMaster.sol) (1 contracts)
+[src/TurboSafe.sol](https://github.com/code-423n4/2022-02-tribe-turbo/blob/main/src/TurboSafe.sol) (1 contracts)
+[src/modules/*](https://github.com/code-423n4/2022-02-tribe-turbo/blob/main/src/modules) (4 contracts)
+[lib/solmate/src/mixins/ERC4626.sol](https://github.com/Rari-Capital/solmate/blob/1205a9067ff957ef8b0b003ff9d77c20ef9f2e0b/src/mixins/ERC4626.sol) (1 contract)
+
+Note that ERC4626.sol is not fully up to date with [EIP-4626](https://eips.ethereum.org/EIPS/eip-4626). In particular it includes `assetsOf` and `assetsPerShare` which will be removed, and it is missing `convertToShares` and `convertToAssets` which should use identical logic to `previewDeposit` and `previewRedeem` for this contract, because the solmate vault has no slippage.
 
 # tribe-turbo
 
